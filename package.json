@@ -13,23 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "appium": "latest",
-    "async": "^0.9.0",
     "cucumber": "^0.5.3",
     "chai": "^2.2.0",
     "chai-as-promised": "^4.3.0",
-    "chance": "^0.7.3",
-    "colors": "^1.0.3",
-    "js-yaml": "^3.3.0",
-    "lodash": "^3.6.0",
-    "mustache": "^2.0.0",
+    "colors": "latest",
     "q": "^1.2.0",
-    "request": "^2.55.0",
-    "string-template": "~0.2.0",
     "wd": "latest"
-  },
-  "devDependencies": {
-    "grunt-cli": "~0.1.13",
-    "ps-node": "0.0.4",
-    "rekuire": "^0.1.9"
   }
 }

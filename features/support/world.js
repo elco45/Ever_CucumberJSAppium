@@ -1,10 +1,11 @@
 "use strict";
 
-var util = require('util')
-  , path = require('path')
-  , pagesPath = util.format('../pages/%sPages', process.env.PLATFORM)
-  , LoginView = require(path.join(pagesPath, 'loginView.js'))
-  , HomeView = require(path.join(pagesPath, 'homeView.js'));
+var util = require('util'), 
+  path = require('path'), 
+  pagesPath = util.format('../pages/%sPages', process.env.PLATFORM), 
+  LoginView = require(path.join(pagesPath, 'loginView.js')), 
+  HomeView = require(path.join(pagesPath, 'homeView.js')),
+  TextNoteView = require(path.join(pagesPath, 'textNoteView.js'));
 
 module.exports = function() {
   var wd = require('wd');
@@ -19,7 +20,8 @@ module.exports = function() {
     this.driver = wd.promiseChainRemote({ host: 'localhost', port: 4723 });
     this.pages = {
       loginView: new LoginView(this.driver),
-      homeView: new HomeView(this.driver)
+      homeView: new HomeView(this.driver),
+      textNoteView: new TextNoteView(this.driver)
     };
     callback();
   };

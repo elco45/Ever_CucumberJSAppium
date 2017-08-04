@@ -1,6 +1,5 @@
 "use strict";
-var Q = require('q')
-  , _ = require('lodash');
+var Q = require('q');
 
 module.exports =  function () {
 
@@ -28,8 +27,8 @@ module.exports =  function () {
     };
 
     this.After(function (scenario, callback) {
-        takeScreenshotIfNeeded(this.driver, scenario)
-        .then(quitDriver)
-        .finally(callback);
+      takeScreenshotIfNeeded(this.driver, scenario)
+      .then(quitDriver)
+      .finally(callback);
     });
 };
