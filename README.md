@@ -12,17 +12,17 @@ A basic cucumber style framework using javascript Appium driver
 
 ###Instructions
 
-1.Install nodejs https://nodejs.org/en/
-2.Install latest java jdk http://www.oracle.com/technetwork/java/javase/downloads/index.html
-3.Install appium
+1. Install nodejs https://nodejs.org/en/
+2. Install latest java jdk http://www.oracle.com/technetwork/java/javase/downloads/index.html
+3. Install appium
 ```javascript
 npm install -g appium
 ```
-4.Install appium-doctor to check and fix configurations needed.
+4. Install appium-doctor to check and fix configurations needed.
 ```javascript
 npm install -g appium
 ```
-5 Go to features/support/caps.js and add your device information. Example-- For android 7.0
+5. Go to features/support/caps.js and add your device information. Example-- For android 7.0
 ```javascript
 '7.0': {
       platformName: 'Android',
@@ -31,13 +31,13 @@ npm install -g appium
       app: __dirname + "\\apps\\Evernote.apk"
     }
 ```
-6.Run appium using the command 'appium' on your console
+6. Run appium using the command 'appium' on your console
 ```javascript
 appium
 ```
-7.Connect your real device or emulator
-8.Run this command on another console 
+7. Connect your real device or emulator
+8. Run this command on another console 
 ```javascript
 PLATFORM='android' VERSION='<YOUR_ANDROID_VERSION>' node_modules/cucumber/bin/cucumber.js
 ```
-9.Have fun!
+9. Have fun!
