@@ -20,7 +20,7 @@ npm install -g appium
 ```
 4. Install appium-doctor to check and fix configurations needed.
 ```javascript
-npm install -g appium
+npm install -g appium-doctor
 ```
 5. Go to features/support/caps.js and add your device information. Example-- For android 7.0
 ```javascript
@@ -39,5 +39,9 @@ appium
 8. Run this command on another console 
 ```javascript
 PLATFORM='android' VERSION='<YOUR_ANDROID_VERSION>' node_modules/cucumber/bin/cucumber.js
+```
+or modify the version on the package.json and run
+```javascript
+npm test
 ```
 9. Have fun!

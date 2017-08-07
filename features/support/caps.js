@@ -21,7 +21,8 @@ module.exports = {
       platformName: 'Android',
       platformVersion: '5.0.1',
       deviceName: 'Android Phone',
-      app: __dirname + "\\apps\\Evernote.apk"
+      app: __dirname + "\\apps\\Evernote.apk",
+      applicationCacheEnabled: true
     }
   },
 };
